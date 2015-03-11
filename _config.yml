@@ -1,2 +1,6 @@
-baseurl: /
-auto: true
+﻿username: zhuliangcn
+baseurl: /zhuliangcn
+markdown: redcarpet
+safe: false
+pygments: true
+title: 测试集

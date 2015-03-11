@@ -1,11 +1,10 @@
----
+﻿---
 layout: default
-title: TestIndex
+title: 文章目录
 ---
-<h2>{ { page.title }}</h2>
-<p>All blogs</p>
-<ul>
+<ul class="post-list">
 	{% for post in site.posts %}
-	<li>{{ post.date | date_to_string }}<a href="/"></a></li>
+		<a href="{{site.baseurl}}{{post.url}}"> {{ post.title }} </a>
+		{{ post.date | date: "%F" }} <br>
 	{% endfor %}
 </ul>
